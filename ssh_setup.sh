@@ -3,6 +3,8 @@ Autorized_keys=$2
 
 apt update
 apt install ssh
+apt install sudo
+apt install vim
 sed -i "s/#Port 22/Port ${Port}/g" /etc/ssh/sshd_config
 sed -i "s/#PubkeyAuthentication yes/PubkeyAuthentication yes/g" /etc/ssh/sshd_config
 
